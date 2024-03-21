@@ -51,6 +51,14 @@ body {
     background: #212837;
 }
 
+.play-board .food{
+    background-color: #00FF00;
+    border-radius: 50%;
+}
+.play-board .head{
+    background-color: #2299dd;
+}
+
 @media (max-width: 780px) {
     .container {
         width: 95vw;
