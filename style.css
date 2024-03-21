@@ -34,16 +34,16 @@ body {
     background: #293447;
 }
 
-.game-details{
+.game-details {
     color: #B8C6DC;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     font-weight: 500;
     padding: 20px 27px;
     font-size: 1.2rem;
 }
 
-.play-board{
+.play-board {
     width: 100%;
     height: 100%;
     display: grid;
@@ -51,18 +51,49 @@ body {
     background: #212837;
 }
 
-.play-board .food{
+.play-board .food {
     background-color: #00FF00;
     border-radius: 50%;
 }
-.play-board .head{
+
+.play-board .head {
     background-color: #2299dd;
 }
 
-@media (max-width: 780px) {
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    color: #B8C6DC;
+    padding: 25px 0;
+    text-align: center;
+    cursor: pointer;
+    width: calc(100% / 4);
+    font-size: 1.2rem;
+    border-right: 1px solid #171b26;
+}
+
+@media (max-width: 920px) {
     .container {
-        width: 95vw;
-        padding: 5px;
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 17px;
+    }
+
+    .controls{
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
     }
 
 }
